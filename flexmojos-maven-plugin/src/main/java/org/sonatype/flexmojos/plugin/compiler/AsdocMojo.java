@@ -103,14 +103,31 @@ public class AsdocMojo
      * Usage:
      * 
      * <pre>
-     * &lt;docClasses&gt;
-     *   &lt;includes&gt;
-     *     &lt;include&gt;com/mycompany/*&lt;/include&gt;
-     *   &lt;/includes&gt;
-     *   &lt;excludes&gt;
-     *     &lt;exclude&gt;com/mycompany/ui/*&lt;/exclude&gt;
-     *   &lt;/excludes&gt;
-     * &lt;/docClasses&gt;
+     * &lt;includeClasses&gt;
+     *   &lt;include&gt;org.sonatype.flexmojos.MyClass&lt;/include&gt;
+     *   &lt;include&gt;org.sonatype.flexmojos.YourClass&lt;/include&gt;
+     *   &lt;scan&gt;
+     *     &lt;includes&gt;
+     *       &lt;include&gt;**.*&lt;/include&gt;
+     *     &lt;/includes&gt;
+     *   &lt;/scan&gt;
+     *   &lt;scan&gt;
+     *     &lt;includes&gt;
+     *       &lt;include&gt;com.mycompany.*&lt;/include&gt;
+     *     &lt;/includes&gt;
+     *     &lt;excludes&gt;
+     *       &lt;exclude&gt;com.mycompany.ui.*&lt;/exclude&gt;
+     *     &lt;/excludes&gt;
+     *   &lt;/scan&gt;
+     *   &lt;scan&gt;
+     *     &lt;includes&gt;
+     *       &lt;include&gt;org.mycompany.*&lt;/include&gt;
+     *     &lt;/includes&gt;
+     *     &lt;excludes&gt;
+     *       &lt;exclude&gt;org.mycompany.ui.*&lt;/exclude&gt;
+     *     &lt;/excludes&gt;
+     *   &lt;/scan&gt;
+     * &lt;/includeClasses&gt;
      * </pre>
      * 
      * @parameter

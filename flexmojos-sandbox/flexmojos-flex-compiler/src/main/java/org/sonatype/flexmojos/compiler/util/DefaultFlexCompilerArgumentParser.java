@@ -237,7 +237,7 @@ public class DefaultFlexCompilerArgumentParser
                 {
                     args.add( new Entry<String, List<String>>( name + "=", null ) );
                 }
-                else if ( "include-classes".equals( name ) )
+                else if ( "include-classes".equals( name ) || "doc-classes".equals( name ) )
                 {
                     StringBuilder classes = new StringBuilder();
                     for ( Object vl : values )
